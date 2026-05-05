@@ -1,5 +1,6 @@
-# IoTsmart
-
+# IoTSMART
+All vibe code
+Before dealing with VTC FYP project
 Windows IoT desktop scaffold with a local Go backend and a PySide6 control-room UI.
 
 ## What is in this version
