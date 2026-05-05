@@ -1,0 +1,5 @@
+backend/data/
+backend/logs/
+backend/iot-backend.exe
+desktop-ui/__pycache__/
+desktop-ui/.venv/

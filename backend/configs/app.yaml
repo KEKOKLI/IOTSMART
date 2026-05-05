@@ -1,0 +1,43 @@
+app:
+  name: "Small IoT Control Center"
+  bind_host: "127.0.0.1"
+  port: 18080
+
+database:
+  type: "sqlite"
+  path: "./data/iot_app.db"
+  auto_migrate: true
+
+security:
+  require_login: true
+  session_timeout_minutes: 60
+  api_token_enabled: true
+
+mqtt:
+  enabled: false
+  broker: "tcp://127.0.0.1:1883"
+  username: ""
+  password: ""
+  topic_prefix: "iot/#"
+  tls: false
+
+modbus:
+  enabled: false
+  poll_interval_seconds: 30
+  timeout_ms: 3000
+
+telemetry:
+  default_interval_seconds: 30
+  retention_days_raw: 90
+  retention_days_aggregate: 730
+
+logging:
+  level: "info"
+  path: "./logs/app.log"
+
+simulator:
+  enabled: true
+  project_id: "demo-project"
+  project_name: "Demo Project"
+  device_count: 20
+  interval_seconds: 30
